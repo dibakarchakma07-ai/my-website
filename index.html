@@ -2,45 +2,69 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Portfolio</title>
+  <title>Muntasir Mubin | Portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-black text-white">
+<body class="bg-gradient-to-b from-black via-gray-900 to-black text-white overflow-x-hidden">
 
-<!-- Navbar -->
-<header class="fixed top-6 left-1/2 -translate-x-1/2 bg-white/10 backdrop-blur-md rounded-full px-8 py-3 flex gap-6">
-  <a href="#" class="text-sm text-gray-300 hover:text-white">Home</a>
-  <a href="#" class="text-sm text-gray-300 hover:text-white">Projects</a>
-  <a href="#" class="text-sm text-gray-300 hover:text-white">About</a>
-  <a href="#" class="text-sm text-gray-300 hover:text-white">Contact</a>
-</header>
+  <!-- Navbar -->
+  <header class="fixed top-6 left-1/2 -translate-x-1/2 bg-white/5 backdrop-blur-md rounded-full px-10 py-3 flex gap-8 z-50 shadow-lg">
+    <a href="#" class="text-sm text-gray-400 hover:text-white transition">Home</a>
+    <a href="#projects" class="text-sm text-gray-400 hover:text-white transition">Projects</a>
+    <a href="#about" class="text-sm text-gray-400 hover:text-white transition">About</a>
+    <a href="#contact" class="text-sm text-gray-400 hover:text-white transition">Contact</a>
+  </header>
 
-<!-- Hero -->
-<section class="min-h-screen flex flex-col justify-center items-center text-center px-6">
+  <!-- Hero Section -->
+  <section class="min-h-screen flex flex-col justify-center items-center text-center px-6 relative">
 
-  <span class="text-xs px-4 py-1 rounded-full bg-white/10 mb-6">
-    Available for new projects
-  </span>
+    <span class="text-xs px-4 py-1 rounded-full bg-white/10 mb-6 animate-pulse">
+      Available for new projects
+    </span>
 
-  <h1 class="text-4xl md:text-6xl font-bold max-w-3xl leading-tight">
-    Crafting Beautiful & Functional Web Experiences
-  </h1>
+    <h1 class="text-4xl md:text-6xl font-extrabold max-w-3xl leading-tight bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-500 animate-fadeIn">
+      Crafting Beautiful & Functional Web Experiences
+    </h1>
 
-  <p class="text-gray-400 mt-6 max-w-xl">
-    Hi, I'm Muntasir Mubin — a passionate Web Developer from Bangladesh.
-  </p>
+    <p class="text-gray-400 mt-6 max-w-xl text-lg md:text-xl">
+      Hi, I'm Dibakar Chakma — a passionate Web Developer from Bangladesh creating modern web experiences.
+    </p>
 
-  <div class="flex gap-4 mt-8">
-    <button class="px-6 py-3 bg-white text-black rounded-full">
-      Let’s Connect
-    </button>
-    <button class="px-6 py-3 border border-white/30 rounded-full">
-      My Resume
-    </button>
-  </div>
+    <div class="flex gap-6 mt-10">
+      <a href="#contact" class="px-7 py-3 bg-purple-500 hover:bg-purple-600 transition rounded-full font-semibold shadow-lg hover:scale-105 transform">
+        Let’s Connect
+      </a>
+      <a href="/resume.pdf" target="_blank" class="px-7 py-3 border border-white/30 rounded-full hover:border-white transition font-semibold hover:scale-105 transform">
+        My Resume
+      </a>
+    </div>
 
-</section>
+    <!-- Decorative Floating Circles -->
+    <div class="absolute top-10 left-10 w-24 h-24 bg-purple-500/20 rounded-full blur-3xl animate-pulse-slow"></div>
+    <div class="absolute bottom-20 right-20 w-32 h-32 bg-pink-500/20 rounded-full blur-3xl animate-pulse-slow"></div>
 
-</body>
-</html>
+  </section>
+
+  <!-- Additional Sections Placeholder -->
+  <section id="projects" class="min-h-screen flex flex-col justify-center items-center text-center px-6">
+    <h2 class="text-3xl md:text-4xl font-bold mb-6">Projects</h2>
+    <p class="text-gray-400 max-w-xl">Coming soon...</p>
+  </section>
+
+  <section id="about" class="min-h-screen flex flex-col justify-center items-center text-center px-6">
+    <h2 class="text-3xl md:text-4xl font-bold mb-6">About Me</h2>
+    <p class="text-gray-400 max-w-xl">Coming soon...</p>
+  </section>
+
+  <section id="contact" class="min-h-screen flex flex-col justify-center items-center text-center px-6">
+    <h2 class="text-3xl md:text-4xl font-bold mb-6">Contact</h2>
+    <p class="text-gray-400 max-w-xl">Let's build something amazing together.</p>
+  </section>
+
+  <style>
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
