@@ -1,204 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Dibakar Chakma | Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: "Segoe UI", sans-serif;
-    }
-
-    body {
-      background: #0f172a;
-      color: #e5e7eb;
-      line-height: 1.6;
-    }
-
-    a {
-      color: #38bdf8;
-      text-decoration: none;
-    }
-
-    /* HEADER / HERO */
-    header {
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      padding: 20px;
-    }
-
-    header h1 {
-      font-size: 3rem;
-      font-weight: 700;
-    }
-
-    header h1 span {
-      color: #38bdf8;
-    }
-
-    header p {
-      margin-top: 15px;
-      color: #94a3b8;
-      font-size: 1.2rem;
-    }
-
-    header .btn {
-      margin-top: 30px;
-      padding: 12px 28px;
-      border: 1px solid #38bdf8;
-      border-radius: 30px;
-      transition: 0.3s;
-    }
-
-    header .btn:hover {
-      background: #38bdf8;
-      color: #020617;
-    }
-
-    /* SECTIONS */
-    section {
-      max-width: 1000px;
-      margin: auto;
-      padding: 80px 20px;
-    }
-
-    section h2 {
-      font-size: 2rem;
-      margin-bottom: 20px;
-      color: #38bdf8;
-    }
-
-    /* ABOUT */
-    .about p {
-      color: #cbd5f5;
-    }
-
-    /* SKILLS */
-    .skills-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-      gap: 15px;
-    }
-
-    .skill {
-      background: #020617;
-      padding: 12px;
-      border-radius: 6px;
-      text-align: center;
-      border: 1px solid #1e293b;
-    }
-
-    /* PROJECTS */
-    .projects-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 20px;
-    }
-
-    .project {
-      background: #020617;
-      padding: 20px;
-      border-radius: 8px;
-      border: 1px solid #1e293b;
-      transition: 0.3s;
-    }
-
-    .project:hover {
-      transform: translateY(-6px);
-      border-color: #38bdf8;
-    }
-
-    .project h3 {
-      margin-bottom: 10px;
-    }
-
-    /* CONTACT */
-    .contact p {
-      margin-bottom: 10px;
-    }
-
-    /* FOOTER */
-    footer {
-      text-align: center;
-      padding: 25px;
-      background: #020617;
-      color: #64748b;
-    }
-
-    /* RESPONSIVE */
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 2.2rem;
-      }
-    }
-  </style>
+  <meta charset="UTF-8">
+  <title>dibakar Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="bg-black text-white">
 
-<header>
-  <h1>Hi, I’m <span>Dibakar</span></h1>
-  <p>Web Development Learner • Future Developer</p>
-  <a class="btn" href="#projects">View My Work</a>
+<!-- Navbar -->
+<header class="fixed top-6 left-1/2 -translate-x-1/2 bg-white/10 backdrop-blur-md rounded-full px-8 py-3 flex gap-6">
+  <a href="#" class="text-sm text-gray-300 hover:text-white">Home</a>
+  <a href="#" class="text-sm text-gray-300 hover:text-white">Projects</a>
+  <a href="#" class="text-sm text-gray-300 hover:text-white">About</a>
+  <a href="#" class="text-sm text-gray-300 hover:text-white">Contact</a>
 </header>
 
-<section class="about">
-  <h2>About Me</h2>
-  <p>
-    I’m Dibakar, a passionate learner exploring web development.
-    I love building clean, modern, and user-friendly websites.
-    This portfolio showcases my learning journey and projects.
-  </p>
-</section>
+<!-- Hero -->
+<section class="min-h-screen flex flex-col justify-center items-center text-center px-50">
 
-<section class="skills">
-  <h2>Skills</h2>
-  <div class="skills-grid">
-    <div class="skill">HTML</div>
-    <div class="skill">CSS</div>
-    <div class="skill">JavaScript</div>
-    <div class="skill">Git & GitHub</div>
-    <div class="skill">Responsive Design</div>
+  <span class="text-xs px-4 py-1 rounded-full bg-white/10 mb-6">
+    Welcome To a New Journey
+  </span>
+
+  <h1 class="text-4xl md:text-6xl font-bold max-w-3xl leading-tight">
+    Crafting Beautiful & Functional Web Experience
+  </h1>
+
+  <p class="text-gray-400 mt-6 max-w-xl">
+    Hi, I'm Dibakar Chakma — a passionate Web Developer from a rural village of Bangladesh.
+  </p>
+
+  <div class="flex gap-4 mt-8">
+    <button class="px-6 py-3 bg-white text-black rounded-full">
+      Let’s Connect
+    </button>
+    <button class="px-6 py-3 border border-white/30 rounded-full">
+      My Resume
+    </button>
   </div>
 </section>
-
-<section class="projects" id="projects">
-  <h2>Projects</h2>
-  <div class="projects-grid">
-    <div class="project">
-      <h3>Portfolio Website</h3>
-      <p>Personal portfolio built using HTML & CSS.</p>
-    </div>
-
-    <div class="project">
-      <h3>Coming Soon</h3>
-      <p>More projects will be added as I learn.</p>
-    </div>
-  </div>
-</section>
-
-<section class="contact">
-  <h2>Contact</h2>
-  <p>Email: your-email@example.com</p>
-  <p>
-    GitHub:
-    <a href="https://github.com/dibakarchakma07-ai" target="_blank">
-      github.com/dibakarchakma07-ai
-    </a>
-  </p>
-</section>
-
-<footer>
-  © 2026 Dibakar Chakma • Portfolio
-</footer>
 
 </body>
 </html>
