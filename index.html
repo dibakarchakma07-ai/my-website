@@ -2,121 +2,91 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Dibakar | Sci-Fi Portfolio</title>
+<title>Your Name | Portfolio</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap');
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Orbitron', sans-serif;
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
 body {
-  background: radial-gradient(circle at top, #020617, #000);
+  margin:0;
+  padding:0;
+  font-family: 'Orbitron', sans-serif;
+  background: #020617;
   color: #e5e7eb;
-  overflow-x: hidden;
 }
-
-/* Neon glow effect */
-.glow {
-  text-shadow: 0 0 5px #38bdf8, 0 0 15px #38bdf8;
-}
-
-/* Header */
 header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  background: linear-gradient(120deg, #0d0f23, #03060c);
 }
-
 header h1 {
-  font-size: 3.2rem;
+  color:#38bdf8;
+  font-size:3rem;
+  text-shadow: 0 0 10px #38bdf8;
 }
-
 header p {
-  margin-top: 15px;
   color: #94a3b8;
+  margin-top: 10px;
+  font-size:1.2rem;
 }
-
-/* Section */
 section {
-  max-width: 1100px;
-  margin: auto;
-  padding: 80px 20px;
+  padding:60px 20px;
+  max-width:1000px;
+  margin:auto;
 }
-
 h2 {
-  color: #38bdf8;
-  margin-bottom: 30px;
-  font-size: 1.8rem;
+  color:#38bdf8;
+  margin-bottom:15px;
+  text-align:center;
+  font-size:2rem;
 }
-
-/* Cards */
-.card {
-  background: rgba(2, 6, 23, 0.85);
-  border: 1px solid #38bdf8;
-  box-shadow: 0 0 20px rgba(56,189,248,0.3);
-  padding: 25px;
-  margin-bottom: 25px;
-  border-radius: 12px;
+.about, .skills, .projects, .contact {
+  margin-bottom:50px;
 }
-
-/* Skills */
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: 20px;
+.skills-grid, .projects-grid {
+  display:grid;
+  gap:20px;
+  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
 }
-
-.skill {
-  text-align: center;
-  padding: 15px;
-  border: 1px solid #38bdf8;
-  border-radius: 8px;
-  box-shadow: inset 0 0 10px rgba(56,189,248,0.4);
+.skill-box, .project-box {
+  background: #11131c;
+  padding:20px;
+  border-radius:8px;
+  border:1px solid #38bdf8;
+  box-shadow: 0 0 15px rgba(56,189,248,0.3);
+  text-align:center;
 }
-
-/* Projects */
-.project h3 {
-  margin-bottom: 10px;
+.skill-box:hover, .project-box:hover {
+  transform: translateY(-5px);
+  transition:0.3s;
 }
-
-/* Contact */
+.skill-box span, .project-box span {
+  display:block;
+  font-size:1.1rem;
+  color:#94a3b8;
+}
 .contact a {
-  display: inline-block;
-  margin-top: 15px;
-  color: #38bdf8;
-  text-decoration: none;
-  border: 1px solid #38bdf8;
-  padding: 10px 20px;
-  border-radius: 30px;
-  transition: 0.3s;
+  display:inline-block;
+  margin-top:10px;
+  padding:10px 18px;
+  color:#020617;
+  background:#38bdf8;
+  border-radius:30px;
+  text-decoration:none;
+  transition:0.3s;
 }
-
 .contact a:hover {
-  background: #38bdf8;
-  color: #020617;
+  background:#6ee7b7;
+  color:#020617;
 }
-
-/* Footer */
 footer {
-  text-align: center;
-  padding: 30px;
-  color: #64748b;
-}
-
-/* Responsive */
-@media (max-width: 600px) {
-  header h1 {
-    font-size: 2.2rem;
-  }
+  text-align:center;
+  padding:20px;
+  color:#94a3b8;
 }
 </style>
 </head>
@@ -124,58 +94,59 @@ footer {
 <body>
 
 <header>
-  <h1 class="glow">DIBAKAR CHAKMA</h1>
-  <p>Cyber Web Explorer • Future Developer</p>
+  <h1>Hello, I’m Your Name</h1>
+  <p>Front-End Developer | UI/UX Designer</p>
 </header>
 
-<section>
-  <h2>🧬 About Me</h2>
-  <div class="card">
-    I am Dibakar, learning modern web technologies and building futuristic
-    digital experiences. Passionate about sci-fi UI, clean code, and innovation.
-  </div>
+<section class="about">
+  <h2>About Me</h2>
+  <p>
+    I’m a passionate and creative web developer specializing in
+    modern responsive design, performance, animation, and clean UI.
+  </p>
 </section>
 
-<section>
-  <h2>⚡ Skills</h2>
+<section class="skills">
+  <h2>Skills</h2>
   <div class="skills-grid">
-    <div class="skill">HTML</div>
-    <div class="skill">CSS</div>
-    <div class="skill">JavaScript</div>
-    <div class="skill">GitHub</div>
-    <div class="skill">Responsive UI</div>
-    <div class="skill">Sci-Fi Design</div>
+    <div class="skill-box"><span>HTML</span></div>
+    <div class="skill-box"><span>CSS</span></div>
+    <div class="skill-box"><span>JavaScript</span></div>
+    <div class="skill-box"><span>React</span></div>
+    <div class="skill-box"><span>Responsive Design</span></div>
+    <div class="skill-box"><span>Git & GitHub</span></div>
   </div>
 </section>
 
-<section>
-  <h2>🚀 Projects</h2>
-
-  <div class="card project">
-    <h3>Futuristic Portfolio</h3>
-    <p>Sci-fi themed portfolio website using pure HTML & CSS.</p>
-  </div>
-
-  <div class="card project">
-    <h3>Coming Soon</h3>
-    <p>More advanced cyber projects loading...</p>
+<section class="projects">
+  <h2>Projects</h2>
+  <div class="projects-grid">
+    <div class="project-box">
+      <h3>Portfolio Website</h3>
+      <span>HTML, CSS</span>
+    </div>
+    <div class="project-box">
+      <h3>Sci-Fi Design UI</h3>
+      <span>CSS Animations</span>
+    </div>
+    <div class="project-box">
+      <h3>Coming Soon...</h3>
+      <span>More Projects</span>
+    </div>
   </div>
 </section>
 
 <section class="contact">
-  <h2>📡 Contact</h2>
-  <div class="card">
-    <p>Email: your-email@example.com</p>
-    <a href="https://github.com/dibakarchakma07-ai" target="_blank">
-      GitHub Console →
-    </a>
-  </div>
+  <h2>Contact Me</h2>
+  <p>Email: youremail@example.com</p>
+  <a href="mailto:youremail@example.com">Send Email</a>
 </section>
 
 <footer>
-  © 2026 Dibakar • Powered by GitHub Pages
+  © 2026 Your Name. All rights reserved.
 </footer>
 
 </body>
 </html>
+
 
